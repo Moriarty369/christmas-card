@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./media/grinch-background.jpeg');
+}
+
+.card-container {
+    perspective: 1000px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transform: rotateY(20deg);
+    transition: transform 0.5s;
+    background-image: url(./media/background-card-alex.avif);
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+.image{
+    margin: 10px;
+   
+
+}
+
+img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #c00; /* Sombra roja */
+  }
+
+.greeting {
+    padding: 20px;
+    text-align: center;
+    color: red;
+}
+
+.snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://www.transparenttextures.com/patterns/snow.png'); /* Puedes agregar una imagen de nieve */
+    pointer-events: none;
+    opacity: 0.5;
+    z-index: 2;
+}
