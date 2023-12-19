@@ -7,3 +7,4 @@ card.addEventListener('mouseenter', () => {
 card.addEventListener('mouseleave', () => {
     card.style.transform = 'rotateY(20deg)';
 });
+
